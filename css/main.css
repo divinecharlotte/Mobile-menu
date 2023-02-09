@@ -27,51 +27,60 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+#desktop-nav,
+#desktop-nav ul {
   display: none;
 }
-#closeIcon{
+
+#closeIcon {
   display: none;
 }
+
 @media all and (max-width: 600px) {
-  #desktop-nav  {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 100%;
-     height: 100vh;
-     background: #fff;
-     z-index: 9999;
-     opacity: 0.97;
-     top: 0;
-     right: 0;
-     margin: 0;
-     position: fixed;
-     transition: 1s;
-     right: -100%;
-     justify-content: space-around;
-     cursor: pointer;
- }
- #desktop-nav ul{
-  display: flex;
-  /* margin: -30%; */
-  /* height: 80vh; */
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
- }
- #desktop-nav ul li a{
-  color: black;
- }
- 
- #closeIcon {
-  display: block;
-  color: black;
-  float: right;
-  font-size: 25px;
-  margin: -50% -40%;
+  #desktop-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999;
+    opacity: 0.97;
+    top: 0;
+
+    /* right: 0; */
+    margin: 0;
+    position: fixed;
+    transition: 1s;
+    right: -100%;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+
+  #desktop-nav ul {
+    display: flex;
+
+    /* margin: -30%; */
+
+    /* height: 80vh; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #desktop-nav ul li a {
+    color: black;
+  }
+
+  #closeIcon {
+    display: block;
+    color: black;
+    float: right;
+    font-size: 25px;
+    margin: -50% -40%;
+  }
 }
- }
+
 #logo {
   font-family: "Roboto", sans-serif;
   font-style: normal;
