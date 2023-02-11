@@ -3,13 +3,7 @@ const hideMenu = document.getElementById('closeIcon');
 
 const navLinks = document.getElementById('desktop-nav');
 
-burger.onclick = function burger() {
-  navLinks.style.right = '0';
-};
-hideMenu.onclick = function hideMenu() {
-  navLinks.style.right = '-100%';
-};
-
-navLinks.onclick = function hideMenu() {
-  navLinks.style.right = '-100%';
-};
+const hideMenuFunc = (arg) => { navLinks.style.right = arg; }; 
+burger.onclick = () => hideMenuFunc("0");
+ hideMenu.onclick = () => hideMenuFunc("-100%");
+ navLinks.onclick = () => hideMenuFunc("-100%");
